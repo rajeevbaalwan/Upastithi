@@ -7,7 +7,6 @@ import android.os.Bundle;
 
 import in.evolve.upastithi.R;
 import in.evolve.upastithi.Student.Adapters.PagerAdapter;
-import in.evolve.upastithi.Student.Fragments.TabAssignments;
 import in.evolve.upastithi.Student.Fragments.TabAttendance;
 import in.evolve.upastithi.Student.Fragments.TabMarks;
 import in.evolve.upastithi.Student.Fragments.TabQueries;
@@ -35,7 +34,6 @@ public class StudentLandingActivity extends AppCompatActivity {
 
         pagerAdapter.addFragment(new TabAttendance(),"Attendance");
         pagerAdapter.addFragment(new TabMarks(),"Marks");
-        pagerAdapter.addFragment(new TabAssignments(),"Assignments");
         pagerAdapter.addFragment(new TabQueries(),"Queries");
         viewPager.setAdapter(pagerAdapter);
 
