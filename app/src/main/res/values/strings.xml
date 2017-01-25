@@ -5,5 +5,41 @@
     <string name="btn_student_login">LOGIN</string>
     <string name="hint_enter_id">Enter Your Email Id</string>
     <string name="student">Student</string>
+    <string-array name="sess_1_marks">
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="sess_2_marks">
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="subject_name">
+        <item>Data Mining</item>
+        <item>Data Mining</item>
+        <item>Data Mining</item>
+        <item>Data Mining</item>
+        <item>Data Mining</item>
+        <item>Data Mining</item>
+        <item>Data Mining</item>
+        <item>Data Mining</item>
+        <item>Data Mining</item>
+        <item>Data Mining</item>
+    </string-array>
 
 </resources>
