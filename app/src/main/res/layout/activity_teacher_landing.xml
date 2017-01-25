@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9e9e9e"
+    tools:context="in.evolve.upastithi.Teacher.Activities.TeacherLanding">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1">
+           <Button
+               android:id="@+id/attendance_button"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="ATTENDANCE"
+               android:textSize="25sp"
+               android:textStyle="bold"
+               android:textColor="@android:color/white"
+               android:background="#263238" />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:visibility="invisible"
+               android:id="@+id/attendance_view_edit_button_layout">
+                   <Button
+                       android:id="@+id/view_attendance"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:text="VIEW"
+                       android:textSize="25sp"
+                       android:textColor="@android:color/white"
+                       android:background="#0288d1" />
+                   <Button
+                       android:id="@+id/edit_attendance"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:text="EDIT"
+                       android:textSize="25sp"
+                       android:textColor="@android:color/white"
+                       android:background="#169e21" />
+
+           </LinearLayout>
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1">
+           <Button
+               android:id="@+id/marks_button"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="Marks"
+               android:textSize="25sp"
+               android:textStyle="bold"
+               android:textColor="@android:color/white"
+               android:background="#37474f" />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:visibility="invisible"
+               android:id="@+id/marks_view_edit_button_layout">
+                   <Button
+                       android:id="@+id/view_marks"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:text="VIEW"
+                       android:textSize="25sp"
+                       android:textColor="@android:color/white"
+                       android:background="#ff4800" />
+                   <Button
+                       android:id="@+id/edit_marks"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:text="EDIT"
+                       android:textSize="25sp"
+                       android:textColor="@android:color/white"
+                       android:background="#0288d1" />
+
+           </LinearLayout>
+
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1">
+           <Button
+               android:id="@+id/assignment"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:text="asssignments"
+               android:textSize="25sp"
+               android:textStyle="bold"
+               android:textColor="@android:color/white"
+               android:background="#455a64" />
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1">
+           <Button
+               android:id="@+id/student_requests_button"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:text="Student Requests"
+               android:textSize="25sp"
+               android:textStyle="bold"
+               android:textColor="@android:color/white"
+               android:background="#616161" />
+       </RelativeLayout>
+
+   </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="in.evolve.upastithi.LandingActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+                <Button
+                    android:id="@+id/student"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circular_button"
+                    android:layout_gravity="center"
+                    android:text="@string/student"
+                    android:textSize="25sp"
+                    android:layout_marginRight="11dp"
+                    android:textColor="@android:color/white"
+                    android:shadowRadius="15"
+                    android:shadowColor="#A8A8A8"/>
+
+            <Button
+                android:layout_marginLeft="11dp"
+                android:id="@+id/teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circular_button"
+                android:text="teacher"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+            <Button
+                android:id="@+id/admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/circular_button"
+                android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Upastithi"
+            android:textSize="45dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
