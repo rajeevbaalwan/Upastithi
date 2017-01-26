@@ -24,7 +24,13 @@
         <activity android:name=".Chairperson.Activities.ChairpersonLandingActivity" />
         <activity android:name=".Academic.Activities.AcademicLoginActivity" />
         <activity android:name=".Chairperson.Activities.ChairpersonLoginActivity" />
-        <activity android:name=".ViceChancellor.Activities.VcLoginActivity"></activity>
+        <activity android:name=".ViceChancellor.Activities.VcLoginActivity" />
+        <activity android:name=".Teacher.Activities.ViewAttendanceActivity" />
+        <activity android:name=".Teacher.Activities.EditAttendanceActivity" />
+        <activity android:name=".Teacher.Activities.ViewMarksActivity" />
+        <activity android:name=".Teacher.Activities.EditMarksActivity" />
+        <activity android:name=".Teacher.Activities.GenerateReportActivity" />
+        <activity android:name=".Teacher.Activities.StudentRequestActivity"></activity>
     </application>
 
 </manifest>

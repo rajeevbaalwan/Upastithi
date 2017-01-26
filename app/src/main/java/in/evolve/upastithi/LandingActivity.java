@@ -13,6 +13,8 @@ import in.evolve.upastithi.Academic.Activities.AcademicLoginActivity;
 import in.evolve.upastithi.Chairperson.Activities.ChairpersonLoginActivity;
 import in.evolve.upastithi.Student.Activities.StudentLandingActivity;
 import in.evolve.upastithi.Student.Activities.StudentLoginActivity;
+import in.evolve.upastithi.Teacher.Activities.GenerateReportActivity;
+import in.evolve.upastithi.Teacher.Activities.StudentRequestActivity;
 import in.evolve.upastithi.Teacher.Activities.TeacherLanding;
 import in.evolve.upastithi.Teacher.Activities.TeacherLoginActivity;
 import in.evolve.upastithi.Utilities.Utils;
@@ -25,6 +27,7 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
     private Button viceChancellor;
     private Button chairperson;
     private Button academic;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +45,7 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
         academic.setOnClickListener(this);
         teacher.setOnClickListener(this);
         student.setOnClickListener(this);
+
     }
 
     @Override

@@ -23,6 +23,8 @@ public class TeacherLanding extends AppCompatActivity implements View.OnClickLis
     private int attendanceClicked;
     private int marksClicked;
     private Animation animation;
+    private Button studentRequest;
+    private Button generateReport;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,9 @@ public class TeacherLanding extends AppCompatActivity implements View.OnClickLis
         attendance= (Button) findViewById(R.id.attendance_button);
         viewAttendance= (Button) findViewById(R.id.teacher_view_attendance);
         editAttendance= (Button) findViewById(R.id.teacher_edit_attendance);
+        studentRequest= (Button) findViewById(R.id.student_requests_button);
+        generateReport= (Button) findViewById(R.id.generate_report);
+
 
         attendanceViewEdit= (LinearLayout) findViewById(R.id.attendance_view_edit_button_layout);
         marksViewEdit= (LinearLayout) findViewById(R.id.marks_view_edit_button_layout);
@@ -90,6 +95,8 @@ public class TeacherLanding extends AppCompatActivity implements View.OnClickLis
         editAttendance.setOnClickListener(this);
         viewMarks.setOnClickListener(this);
         editMarks.setOnClickListener(this);
+        studentRequest.setOnClickListener(this);
+        generateReport.setOnClickListener(this);
     }
 
     @Override
@@ -111,15 +118,29 @@ public class TeacherLanding extends AppCompatActivity implements View.OnClickLis
             case R.id.teacher_edit_attendance:
                 Intent intent1= new Intent(TeacherLanding.this,EditAttendanceActivity.class);
                 startActivity(intent1);
+                break;
             case R.id.teacher_view_attendance:
                 Intent intent2 = new Intent(TeacherLanding.this, ViewAttendanceActivity.class);
                 startActivity(intent2);
+                break;
             case R.id.teacher_view_marks:
                 Intent intent3 = new Intent(TeacherLanding.this, ViewMarksActivity.class);
                 startActivity(intent3);
+                break;
             case R.id.teacher_edit_marks:
                 Intent intent4 = new Intent(TeacherLanding.this,EditMarksActivity.class);
                 startActivity(intent4);
+                break;
+            case R.id.generate_report:
+                Intent intent5 = new Intent(TeacherLanding.this, GenerateReportActivity.class);
+                startActivity(intent5);
+                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
+                break;
+            case R.id.student_requests_button:
+                Intent intent6 = new Intent(TeacherLanding.this, StudentRequestActivity.class);
+                startActivity(intent6);
+                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
+                break;
         }
     }
 }
