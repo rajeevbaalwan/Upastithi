@@ -7,8 +7,8 @@
                 android:width="1dp"
                 android:color="#2f6699" />
             <size
-                android:width="150dp"
-                android:height="150dp"/>
+                android:width="120dp"
+                android:height="120dp"/>
 
         </shape>
     </item>
@@ -20,10 +20,10 @@
                 android:endColor="#2f6699"
                 android:angle="270" />
             <stroke
-                android:width="10dp"
+                android:width="5dp"
                 android:color="#2f6699" />
-            <size android:width="150dp"
-                  android:height="150dp"/>
+            <size android:width="120dp"
+                  android:height="120dp"/>
 
         </shape>
     </item>

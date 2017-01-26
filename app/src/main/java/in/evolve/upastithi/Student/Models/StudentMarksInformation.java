@@ -7,19 +7,23 @@ import java.io.Serializable;
 /**
  * Created by RAJEEV YADAV on 1/25/2017.
  */
-public class Student_marks_information implements Serializable {
+public class StudentMarksInformation implements Serializable {
 
-    private Context context;
     private String subject;
     private String sess1;
     private String sess2;
-
-    public Student_marks_information(Context context,String subject,String sess1,String sess2)
+    private String semMarks;
+    public StudentMarksInformation(String subject, String sess1, String sess2, String semMarks)
     {
-        this.context=context;
+
         this.subject=subject;
         this.sess1=sess1;
         this.sess2=sess2;
+        this.semMarks=semMarks;
+    }
+
+    public String getSemMarks() {
+        return semMarks;
     }
 
     public String getSubject() {

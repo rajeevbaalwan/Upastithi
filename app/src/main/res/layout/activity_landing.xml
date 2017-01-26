@@ -8,31 +8,31 @@
     tools:context="in.evolve.upastithi.LandingActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_centerInParent="true"
-        android:padding="10dp">
+        android:layout_gravity="center_horizontal">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp">
+            android:orientation="horizontal">
 
                 <Button
+                    android:layout_weight="1"
                     android:id="@+id/student"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/circular_button"
                     android:layout_gravity="center"
                     android:text="@string/student"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
                     android:layout_marginRight="11dp"
                     android:textColor="@android:color/white"
                     android:shadowRadius="15"
                     android:shadowColor="#A8A8A8"/>
 
             <Button
+                android:layout_weight="1"
                 android:layout_marginLeft="11dp"
                 android:id="@+id/teacher"
                 android:layout_width="wrap_content"
@@ -40,7 +40,7 @@
                 android:background="@drawable/circular_button"
                 android:text="teacher"
                 android:textColor="@android:color/white"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:layout_gravity="center"/>
         </LinearLayout>
             <Button
@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Admin"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textColor="@android:color/white"
                 android:background="@drawable/circular_button"
                 android:layout_gravity="center_horizontal"/>

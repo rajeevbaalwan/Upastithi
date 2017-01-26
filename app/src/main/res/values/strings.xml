@@ -29,6 +29,18 @@
         <item>10</item>
         <item>10</item>
     </string-array>
+    <string-array name="sem_marks">
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+        <item>10</item>
+    </string-array>
     <string-array name="subject_name">
         <item>Data Mining</item>
         <item>Data Mining</item>
