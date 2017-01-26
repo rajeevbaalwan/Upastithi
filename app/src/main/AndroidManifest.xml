@@ -19,10 +19,12 @@
         <activity android:name=".Student.Activities.StudentLoginActivity" />
         <activity android:name=".Student.Activities.StudentLandingActivity" />
         <activity android:name=".Teacher.Activities.TeacherLoginActivity" />
-        <activity android:name=".Teacher.Activities.ViewAttendanceActivity" />
-        <activity android:name=".Teacher.Activities.EditAttendanceActivity" />
-        <activity android:name=".Teacher.Activities.ViewMarksActivity" />
-        <activity android:name=".Teacher.Activities.EditMarksActivity"></activity>
+        <activity android:name=".ViceChancellor.Activities.VcLandingActivity" />
+        <activity android:name=".Academic.Activities.AcademicLandingActivity" />
+        <activity android:name=".Chairperson.Activities.ChairpersonLandingActivity" />
+        <activity android:name=".Academic.Activities.AcademicLoginActivity" />
+        <activity android:name=".Chairperson.Activities.ChairpersonLoginActivity" />
+        <activity android:name=".ViceChancellor.Activities.VcLoginActivity"></activity>
     </application>
 
 </manifest>
