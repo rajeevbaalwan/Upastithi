@@ -18,7 +18,11 @@
         <activity android:name=".Teacher.Activities.TeacherLanding" />
         <activity android:name=".Student.Activities.StudentLoginActivity" />
         <activity android:name=".Student.Activities.StudentLandingActivity" />
-        <activity android:name=".Teacher.Activities.TeacherLoginActivity"></activity>
+        <activity android:name=".Teacher.Activities.TeacherLoginActivity" />
+        <activity android:name=".Teacher.Activities.ViewAttendanceActivity" />
+        <activity android:name=".Teacher.Activities.EditAttendanceActivity" />
+        <activity android:name=".Teacher.Activities.ViewMarksActivity" />
+        <activity android:name=".Teacher.Activities.EditMarksActivity"></activity>
     </application>
 
 </manifest>

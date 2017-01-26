@@ -1,5 +1,6 @@
 package in.evolve.upastithi.Teacher.Activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +11,7 @@ import android.widget.LinearLayout;
 
 import in.evolve.upastithi.R;
 
-public class TeacherLanding extends AppCompatActivity {
+public class TeacherLanding extends AppCompatActivity implements View.OnClickListener {
     private Button attendance;
     private Button viewAttendance;
     private Button editAttendance;
@@ -28,8 +29,8 @@ public class TeacherLanding extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_landing);
         attendance= (Button) findViewById(R.id.attendance_button);
-        viewAttendance= (Button) findViewById(R.id.view_attendance);
-        editAttendance= (Button) findViewById(R.id.edit_attendance);
+        viewAttendance= (Button) findViewById(R.id.teacher_view_attendance);
+        editAttendance= (Button) findViewById(R.id.teacher_edit_attendance);
 
         attendanceViewEdit= (LinearLayout) findViewById(R.id.attendance_view_edit_button_layout);
         marksViewEdit= (LinearLayout) findViewById(R.id.marks_view_edit_button_layout);
@@ -59,8 +60,8 @@ public class TeacherLanding extends AppCompatActivity {
         });
 
         marks= (Button) findViewById(R.id.marks_button);
-        viewMarks= (Button) findViewById(R.id.view_marks);
-        editMarks= (Button) findViewById(R.id.edit_marks);
+        viewMarks= (Button) findViewById(R.id.teacher_view_marks);
+        editMarks= (Button) findViewById(R.id.teacher_edit_marks);
 
         marks.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,6 +85,11 @@ public class TeacherLanding extends AppCompatActivity {
 
             }
         });
+
+        viewAttendance.setOnClickListener(this);
+        editAttendance.setOnClickListener(this);
+        viewMarks.setOnClickListener(this);
+        editMarks.setOnClickListener(this);
     }
 
     @Override
@@ -96,5 +102,24 @@ public class TeacherLanding extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
+    }
+
+    @Override
+    public void onClick(View v) {
+     int id=v.getId();
+        switch(id){
+            case R.id.teacher_edit_attendance:
+                Intent intent1= new Intent(TeacherLanding.this,EditAttendanceActivity.class);
+                startActivity(intent1);
+            case R.id.teacher_view_attendance:
+                Intent intent2 = new Intent(TeacherLanding.this, ViewAttendanceActivity.class);
+                startActivity(intent2);
+            case R.id.teacher_view_marks:
+                Intent intent3 = new Intent(TeacherLanding.this, ViewMarksActivity.class);
+                startActivity(intent3);
+            case R.id.teacher_edit_marks:
+                Intent intent4 = new Intent(TeacherLanding.this,EditMarksActivity.class);
+                startActivity(intent4);
+        }
     }
 }

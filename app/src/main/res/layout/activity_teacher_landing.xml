@@ -29,7 +29,7 @@
                android:visibility="invisible"
                android:id="@+id/attendance_view_edit_button_layout">
                    <Button
-                       android:id="@+id/view_attendance"
+                       android:id="@+id/teacher_view_attendance"
                        android:layout_width="match_parent"
                        android:layout_height="match_parent"
                        android:layout_weight="1"
@@ -38,7 +38,7 @@
                        android:textColor="@android:color/white"
                        android:background="#0288d1" />
                    <Button
-                       android:id="@+id/edit_attendance"
+                       android:id="@+id/teacher_edit_attendance"
                        android:layout_width="match_parent"
                        android:layout_height="match_parent"
                        android:layout_weight="1"
@@ -69,7 +69,7 @@
                android:visibility="invisible"
                android:id="@+id/marks_view_edit_button_layout">
                    <Button
-                       android:id="@+id/view_marks"
+                       android:id="@+id/teacher_view_marks"
                        android:layout_width="match_parent"
                        android:layout_height="match_parent"
                        android:layout_weight="1"
@@ -78,7 +78,7 @@
                        android:textColor="@android:color/white"
                        android:background="#ff4800" />
                    <Button
-                       android:id="@+id/edit_marks"
+                       android:id="@+id/teacher_edit_marks"
                        android:layout_width="match_parent"
                        android:layout_height="match_parent"
                        android:layout_weight="1"
