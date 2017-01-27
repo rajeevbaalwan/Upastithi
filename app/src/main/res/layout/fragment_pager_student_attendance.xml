@@ -4,12 +4,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#dadada">
+    android:background="#eceff7">
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="5dp"
-        app:cardBackgroundColor="#bfbdbd">
+        android:layout_margin="5dp">
 
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"

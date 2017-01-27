@@ -6,6 +6,9 @@
     <string name="hint_enter_id">Enter Your Email Id</string>
     <string name="student">Student</string>
     <string name="chaiperson">chairperson</string>
+    <string name="send_image">send</string>
+    <string name="type_message">Type here</string>
+    <string name="send_message">Send Message</string>
     <string-array name="sess_1_marks">
         <item>10</item>
         <item>10</item>
