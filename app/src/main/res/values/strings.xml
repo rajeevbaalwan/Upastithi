@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Upastithi</string>
     <string name="hint_enter_roll">Enter Your Roll No.</string>
-    <string name="hint_enter_pass">Enter Your Password</string>
+    <string name="hint_enter_pass">Enter Your Mobile Number</string>
     <string name="btn_student_login">LOGIN</string>
     <string name="hint_enter_id">Enter Your Email Id</string>
     <string name="student">Student</string>
@@ -9,6 +9,40 @@
     <string name="send_image">send</string>
     <string name="type_message">Type here</string>
     <string name="send_message">Send Message</string>
+
+    <string-array name="department">
+        <item>Select Department</item>
+        <item>Computer Department</item>
+        <item>Mechanical Department</item>
+        <item>Electrical Department</item>
+        <item>Electronics Department</item>
+    </string-array>
+    <string-array name="courses">
+        <item>Select Course</item>
+        <item>B.Tech</item>
+        <item>M.Tech</item>
+        <item>MBA</item>
+        <item>MCA</item>
+    </string-array>
+    <string-array name="course_year">
+        <item>Select Year</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="teacher_names">
+        <item>Select Teacher</item>
+        <item>qwerty1</item>
+        <item>qwerty2</item>
+        <item>qwerty3</item>
+        <item>qwerty4</item>
+        <item>qwerty5</item>
+        <item>qwerty6</item>
+        <item>qwerty7</item>
+        <item>qwerty8</item>
+        <item>qwerty9</item>
+    </string-array>
     <string-array name="sess_1_marks">
         <item>10</item>
         <item>10</item>
