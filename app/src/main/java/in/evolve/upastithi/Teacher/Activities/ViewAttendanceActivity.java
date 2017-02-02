@@ -1,166 +1,50 @@
 package in.evolve.upastithi.Teacher.Activities;
 
 import android.content.res.Resources;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.Spinner;
-import android.widget.TextView;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import in.evolve.upastithi.R;
+import in.evolve.upastithi.Student.Adapters.AttendanceAdapter;
+import in.evolve.upastithi.Student.Models.StudentAttendanceInformation;
+import in.evolve.upastithi.Teacher.Adapters.ViewAttendanceAdapter;
+import in.evolve.upastithi.Teacher.Models.StudentAttendanceInfo;
 
 public class ViewAttendanceActivity extends AppCompatActivity {
 
-    private Spinner courseSpinner;
-    private Spinner departmentSpinner;
-    private Spinner yearSpinner;
-    private Button viewAttendance;
-    private String[] course;
-    private String[] department;
-    private String[] year;
+    private RecyclerView viewAttendanceRecyclerView;
+    private ViewAttendanceAdapter attendanceAdapter;
+    private String[] studentName;
+    private String[] studentRollNo;
+    private String[] studentAttendance;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_attendance);
+        setContentView(R.layout.activity_teacher_view_attendance);
 
-        courseSpinner= (Spinner) findViewById(R.id.teacher_select_course_spinner);
-        departmentSpinner= (Spinner) findViewById(R.id.teacher_select_department_spinner);
-        yearSpinner= (Spinner) findViewById(R.id.teacher_select_year_spinner);
-        viewAttendance= (Button) findViewById(R.id.view_attendance_button);
-
+        viewAttendanceRecyclerView= (RecyclerView) findViewById(R.id.teacher_view_attendance_recycler_view);
         Resources resources=getResources();
-        course=resources.getStringArray(R.array.courses);
-        department=resources.getStringArray(R.array.department);
-        year=resources.getStringArray(R.array.course_year);
+        studentName=resources.getStringArray(R.array.student_name);
+        studentRollNo=resources.getStringArray(R.array.roll_no);
+        studentAttendance=resources.getStringArray(R.array.sess_1_marks);
 
-        List<String> courseList=new ArrayList<>(Arrays.asList(course));
-        List<String> departmentList=new ArrayList<>(Arrays.asList(department));
-        List<String> yearList=new ArrayList<>(Arrays.asList(year));
+        attendanceAdapter=new ViewAttendanceAdapter(ViewAttendanceActivity.this,getData());
+        viewAttendanceRecyclerView.setLayoutManager(new LinearLayoutManager(ViewAttendanceActivity.this));
+        viewAttendanceRecyclerView.setAdapter(attendanceAdapter);
+    }
 
-        ArrayAdapter<String> courseAdapter=new ArrayAdapter<String>(this,
-                R.layout.spinner_single_item,courseList){
+    private List<StudentAttendanceInfo> getData() {
+        List<StudentAttendanceInfo> list=new ArrayList<>();
 
-            @Override
-            public boolean isEnabled(int position) {
-                if(position==0)
-                    return false;
-                else
-                    return  true;
-            }
-
-            @Override
-            public View getDropDownView(int position, View convertView, ViewGroup parent) {
-                View view= super.getDropDownView(position, convertView, parent);
-                TextView textView= (TextView) view;
-
-                if(position%2==1)
-                    textView.setBackgroundColor(Color.parseColor("#ffffff"));
-                else textView.setBackgroundColor(Color.parseColor("#eceff7"));
-                return view;
-            }
-        };
-
-        courseAdapter.setDropDownViewResource(R.layout.spinner_single_item);
-        courseSpinner.setAdapter(courseAdapter);
-
-        courseSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
-
-        ArrayAdapter<String> departmentAdapter=new ArrayAdapter<String>(this,
-                R.layout.spinner_single_item,departmentList){
-
-            @Override
-            public boolean isEnabled(int position) {
-                if(position==0)
-                    return false;
-                else
-                    return  true;
-            }
-
-            @Override
-            public View getDropDownView(int position, View convertView, ViewGroup parent) {
-                View view= super.getDropDownView(position, convertView, parent);
-                TextView textView= (TextView) view;
-
-                if(position%2==1)
-                    textView.setBackgroundColor(Color.parseColor("#ffffff"));
-                else textView.setBackgroundColor(Color.parseColor("#eceff7"));
-                return view;
-            }
-        };
-
-        departmentAdapter.setDropDownViewResource(R.layout.spinner_single_item);
-        departmentSpinner.setAdapter(departmentAdapter);
-
-        departmentSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
-
-        ArrayAdapter<String> yearAdapter=new ArrayAdapter<String>(this,
-                R.layout.spinner_single_item,yearList){
-
-            @Override
-            public boolean isEnabled(int position) {
-                if(position==0)
-                    return false;
-                else
-                    return  true;
-            }
-
-            @Override
-            public View getDropDownView(int position, View convertView, ViewGroup parent) {
-                View view= super.getDropDownView(position, convertView, parent);
-                TextView textView= (TextView) view;
-
-                if(position%2==1)
-                    textView.setBackgroundColor(Color.parseColor("#ffffff"));
-                else textView.setBackgroundColor(Color.parseColor("#eceff7"));
-                return view;
-            }
-        };
-
-        yearAdapter.setDropDownViewResource(R.layout.spinner_single_item);
-        yearSpinner.setAdapter(yearAdapter);
-
-        yearSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
+        for(int i=0;i<10;i++)
+        {
+            list.add(new StudentAttendanceInfo(studentRollNo[i],studentName[i],studentAttendance[i]));
+        }
+        return list;
     }
 }

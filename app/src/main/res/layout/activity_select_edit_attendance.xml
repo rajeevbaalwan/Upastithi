@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/rectangular_background"
-    tools:context="in.evolve.upastithi.Teacher.Activities.ViewMarksActivity">
+    tools:context=".Teacher.Activities.EditAttendanceSelectActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,12 +41,21 @@
             android:scrollbars="vertical"
             android:id="@+id/teacher_select_year_spinner">
         </Spinner>
-
-        <Button
-            android:id="@+id/view_marks_button"
+        <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="View Marks"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            android:id="@+id/teacher_select_subject_spinner">
+        </Spinner>
+
+        <Button
+            android:id="@+id/edit_attendance_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Attendance"
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:layout_margin="20dp"

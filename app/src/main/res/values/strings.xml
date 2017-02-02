@@ -10,6 +10,31 @@
     <string name="type_message">Type here</string>
     <string name="send_message">Send Message</string>
 
+    <string-array name="student_name">
+        <item>Rahul Yadav</item>
+        <item>Rajeev Yadav</item>
+        <item>Namit Yadav</item>
+        <item>Rahul Yadav</item>
+        <item>Rajeev Yadav</item>
+        <item>Namit Yadav</item>
+        <item>Rahul Yadav</item>
+        <item>Rajeev Yadav</item>
+        <item>Namit Yadav</item>
+        <item>Rahul Yadav</item>
+    </string-array>
+
+    <string-array name="roll_no">
+        <item>CE-2212-2K14</item>
+        <item>CE-2213-2K14</item>
+        <item>CE-2212-2K14</item>
+        <item>CE-2213-2K14</item>
+        <item>CE-2212-2K14</item>
+        <item>CE-2213-2K14</item>
+        <item>CE-2212-2K14</item>
+        <item>CE-2213-2K14</item>
+        <item>CE-2212-2K14</item>
+        <item>CE-2213-2K14</item>
+    </string-array>
     <string-array name="department">
         <item>Select Department</item>
         <item>Computer Department</item>
@@ -80,7 +105,7 @@
         <item>10</item>
     </string-array>
     <string-array name="subject_name">
-        <item>Data Mining</item>
+        <item>Select Subject</item>
         <item>Data Mining</item>
         <item>Data Mining</item>
         <item>Data Mining</item>

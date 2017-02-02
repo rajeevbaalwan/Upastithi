@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rectangular_background">
+    android:background="@drawable/rectangular_background"
+    tools:context=".Teacher.Activities.ViewMarksSelectActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,11 +42,21 @@
             android:id="@+id/teacher_select_year_spinner">
         </Spinner>
 
-        <Button
-            android:id="@+id/view_attendance_button"
+        <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="View Attendance"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical"
+            android:id="@+id/teacher_select_subject_spinner">
+        </Spinner>
+
+        <Button
+            android:id="@+id/view_marks_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Marks"
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:layout_margin="20dp"

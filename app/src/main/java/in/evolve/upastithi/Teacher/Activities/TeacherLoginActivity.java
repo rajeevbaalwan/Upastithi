@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import in.evolve.upastithi.R;
-import in.evolve.upastithi.Student.Activities.StudentLandingActivity;
 
 public class TeacherLoginActivity extends AppCompatActivity {
 
@@ -29,7 +28,7 @@ public class TeacherLoginActivity extends AppCompatActivity {
         teacherLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent teacherLanding = new Intent(TeacherLoginActivity.this,TeacherLanding.class);
+                Intent teacherLanding = new Intent(TeacherLoginActivity.this,TeacherLandingActivity.class);
                 startActivity(teacherLanding);
                 overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
             }

@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Teacher.Activities.TeacherLanding" />
+        <activity android:name=".Teacher.Activities.TeacherLandingActivity" />
         <activity android:name=".Student.Activities.StudentLoginActivity" />
         <activity android:name=".Student.Activities.StudentLandingActivity" />
         <activity android:name=".Teacher.Activities.TeacherLoginActivity" />
@@ -25,13 +25,17 @@
         <activity android:name=".Academic.Activities.AcademicLoginActivity" />
         <activity android:name=".Chairperson.Activities.ChairpersonLoginActivity" />
         <activity android:name=".ViceChancellor.Activities.VcLoginActivity" />
+        <activity android:name=".Teacher.Activities.ViewAttendanceSelectActivity" />
+        <activity android:name=".Teacher.Activities.EditAttendanceSelectActivity" />
+        <activity android:name=".Teacher.Activities.ViewMarksSelectActivity" />
+        <activity android:name=".Teacher.Activities.EditMarksSelectActivity" />
+        <activity android:name=".Teacher.Activities.GenerateReportActivity" />
+        <activity android:name=".Teacher.Activities.StudentRequestActivity" />
+        <activity android:name=".Student.Activities.StudentChatActivity" />
         <activity android:name=".Teacher.Activities.ViewAttendanceActivity" />
         <activity android:name=".Teacher.Activities.EditAttendanceActivity" />
         <activity android:name=".Teacher.Activities.ViewMarksActivity" />
-        <activity android:name=".Teacher.Activities.EditMarksActivity" />
-        <activity android:name=".Teacher.Activities.GenerateReportActivity" />
-        <activity android:name=".Teacher.Activities.StudentRequestActivity" />
-        <activity android:name=".Student.Activities.StudentChatActivity"></activity>
+        <activity android:name=".Teacher.Activities.EditMarksActivity"></activity>
     </application>
 
 </manifest>

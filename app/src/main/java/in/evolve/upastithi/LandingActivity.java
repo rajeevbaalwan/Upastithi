@@ -4,20 +4,12 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.LinearLayout;
 
 import in.evolve.upastithi.Academic.Activities.AcademicLoginActivity;
 import in.evolve.upastithi.Chairperson.Activities.ChairpersonLoginActivity;
-import in.evolve.upastithi.Student.Activities.StudentLandingActivity;
 import in.evolve.upastithi.Student.Activities.StudentLoginActivity;
-import in.evolve.upastithi.Teacher.Activities.GenerateReportActivity;
-import in.evolve.upastithi.Teacher.Activities.StudentRequestActivity;
-import in.evolve.upastithi.Teacher.Activities.TeacherLanding;
 import in.evolve.upastithi.Teacher.Activities.TeacherLoginActivity;
-import in.evolve.upastithi.Utilities.Utils;
 import in.evolve.upastithi.ViceChancellor.Activities.VcLoginActivity;
 
 public class LandingActivity extends AppCompatActivity implements View.OnClickListener {
