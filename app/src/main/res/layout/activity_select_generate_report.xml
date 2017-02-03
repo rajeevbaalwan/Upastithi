@@ -114,17 +114,17 @@
                 android:scrollbars="vertical"
                 android:id="@+id/teacher_select_subject_spinner">
             </Spinner>
-            </LinearLayout>
+        </LinearLayout>
 
         <Button
-            android:id="@+id/edit_attendance_button"
+            android:id="@+id/generate_report_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Edit Attendance"
+            android:text="Generate Report"
             android:textStyle="bold"
             android:textColor="@android:color/white"
             android:textSize="25sp"
             android:layout_margin="20dp"
             android:background="@drawable/rectangular_button"/>
-        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

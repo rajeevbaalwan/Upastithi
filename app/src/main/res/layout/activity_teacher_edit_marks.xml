@@ -12,4 +12,13 @@
         android:id="@+id/teacher_edit_marks_recycler_view">
 
     </android.support.v7.widget.RecyclerView>
+    <Button
+        android:id="@+id/submit_marks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rectangular_button"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>

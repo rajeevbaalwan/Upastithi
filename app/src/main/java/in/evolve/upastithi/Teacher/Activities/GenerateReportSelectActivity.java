@@ -19,27 +19,28 @@ import java.util.List;
 
 import in.evolve.upastithi.R;
 
-public class EditAttendanceSelectActivity extends AppCompatActivity {
+public class GenerateReportSelectActivity extends AppCompatActivity {
 
     private Spinner courseSpinner;
     private Spinner departmentSpinner;
     private Spinner yearSpinner;
     private Spinner subjectSpinner;
-    private Button editAttendanceButton;
+    private Button generateReportButton;
     private String[] course;
     private String[] department;
     private String[] year;
     private String[] subject;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_select_edit_attendance);
+        setContentView(R.layout.activity_select_generate_report);
 
         courseSpinner= (Spinner) findViewById(R.id.teacher_select_course_spinner);
         departmentSpinner= (Spinner) findViewById(R.id.teacher_select_department_spinner);
         yearSpinner= (Spinner) findViewById(R.id.teacher_select_year_spinner);
         subjectSpinner= (Spinner) findViewById(R.id.teacher_select_subject_spinner);
-        editAttendanceButton= (Button) findViewById(R.id.edit_attendance_button);
+        generateReportButton= (Button) findViewById(R.id.generate_report_button);
 
         Resources resources=getResources();
         course=resources.getStringArray(R.array.courses);
@@ -206,10 +207,10 @@ public class EditAttendanceSelectActivity extends AppCompatActivity {
             }
         });
 
-        editAttendanceButton.setOnClickListener(new View.OnClickListener() {
+        generateReportButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(EditAttendanceSelectActivity.this,EditAttendanceActivity.class);
+                Intent intent=new Intent(GenerateReportSelectActivity.this,GenerateReportActivity.class);
                 startActivity(intent);
             }
         });

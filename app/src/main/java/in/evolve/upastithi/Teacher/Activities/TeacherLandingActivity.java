@@ -132,7 +132,7 @@ public class TeacherLandingActivity extends AppCompatActivity implements View.On
                 startActivity(intent4);
                 break;
             case R.id.generate_report:
-                Intent intent5 = new Intent(TeacherLandingActivity.this, GenerateReportActivity.class);
+                Intent intent5 = new Intent(TeacherLandingActivity.this, GenerateReportSelectActivity.class);
                 startActivity(intent5);
                 overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
                 break;
