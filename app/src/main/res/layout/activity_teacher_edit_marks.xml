@@ -6,19 +6,22 @@
     android:background="@drawable/rectangular_background"
     tools:context="in.evolve.upastithi.Teacher.Activities.EditMarksActivity">
 
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/teacher_edit_marks_recycler_view">
-
-    </android.support.v7.widget.RecyclerView>
     <Button
         android:id="@+id/submit_marks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Submit"
         android:textSize="25sp"
+        android:textStyle="bold"
         android:textColor="@android:color/white"
         android:background="@drawable/rectangular_button"
         android:layout_alignParentBottom="true"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@id/submit_marks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/teacher_edit_marks_recycler_view">
+
+    </android.support.v7.widget.RecyclerView>
+
 </RelativeLayout>
