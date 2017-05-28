@@ -19,6 +19,10 @@ public class EditMarksActivity extends AppCompatActivity {
     private EditMarksAdapter editMarksAdapetr;
     private String[] rollNo;
     private String[] name;
+    private String[] sess1Marks;
+    private String[] sess2Marks;
+    private String[] semMarks;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,9 +31,12 @@ public class EditMarksActivity extends AppCompatActivity {
         Resources resources=getResources();
         rollNo=resources.getStringArray(R.array.roll_no);
         name=resources.getStringArray(R.array.student_name);
+        sess1Marks=resources.getStringArray(R.array.sess_1_marks);
+        sess2Marks=resources.getStringArray(R.array.sess_2_marks);
+        semMarks=resources.getStringArray(R.array.sem_marks);
 
         editMarksRecyclerView= (RecyclerView) findViewById(R.id.teacher_edit_marks_recycler_view);
-        editMarksAdapetr=new EditMarksAdapter(EditMarksActivity.this,getData());
+        editMarksAdapetr=new EditMarksAdapter(EditMarksActivity.this,getData(),sess1Marks,sess2Marks,semMarks);
         editMarksRecyclerView.setLayoutManager(new LinearLayoutManager(EditMarksActivity.this));
         editMarksRecyclerView.setAdapter(editMarksAdapetr);
     }

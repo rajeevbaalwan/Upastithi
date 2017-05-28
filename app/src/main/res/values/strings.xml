@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Upastithi</string>
-    <string name="hint_enter_roll">Enter Your Roll No.</string>
-    <string name="hint_enter_pass">Enter Your Mobile Number</string>
+    <string name="hint_enter_roll">Enter Your ID.</string>
+    <string name="hint_enter_pass">Enter Your Password</string>
     <string name="btn_student_login">LOGIN</string>
     <string name="hint_enter_id">Enter Your Email Id</string>
     <string name="student">Student</string>
@@ -14,26 +14,26 @@
         <item>Rahul Yadav</item>
         <item>Rajeev Yadav</item>
         <item>Namit Yadav</item>
+        <item>Pawan Yadav</item>
         <item>Rahul Yadav</item>
         <item>Rajeev Yadav</item>
         <item>Namit Yadav</item>
+        <item>Pawan Yadav</item>
         <item>Rahul Yadav</item>
         <item>Rajeev Yadav</item>
-        <item>Namit Yadav</item>
-        <item>Rahul Yadav</item>
     </string-array>
 
     <string-array name="roll_no">
         <item>CE-2212-2K14</item>
         <item>CE-2213-2K14</item>
-        <item>CE-2212-2K14</item>
-        <item>CE-2213-2K14</item>
-        <item>CE-2212-2K14</item>
-        <item>CE-2213-2K14</item>
-        <item>CE-2212-2K14</item>
-        <item>CE-2213-2K14</item>
-        <item>CE-2212-2K14</item>
-        <item>CE-2213-2K14</item>
+        <item>CE-2214-2K14</item>
+        <item>CE-2215-2K14</item>
+        <item>CE-2216-2K14</item>
+        <item>CE-2217-2K14</item>
+        <item>CE-2218-2K14</item>
+        <item>CE-2219-2K14</item>
+        <item>CE-2220-2K14</item>
+        <item>CE-2221-2K14</item>
     </string-array>
     <string-array name="department">
         <item>Select Department</item>
@@ -58,60 +58,60 @@
     </string-array>
     <string-array name="teacher_names">
         <item>Select Teacher</item>
-        <item>qwerty1</item>
-        <item>qwerty2</item>
-        <item>qwerty3</item>
-        <item>qwerty4</item>
-        <item>qwerty5</item>
-        <item>qwerty6</item>
-        <item>qwerty7</item>
-        <item>qwerty8</item>
-        <item>qwerty9</item>
+        <item>Teacher 1</item>
+        <item>Teacher 2</item>
+        <item>Teacher 3</item>
+        <item>Teacher 4</item>
+        <item>Teacher 5</item>
+        <item>Teacher 6</item>
+        <item>Teacher 7</item>
+        <item>Teacher 8</item>
+        <item>Teacher 9</item>
     </string-array>
     <string-array name="sess_1_marks">
         <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
+        <item>12</item>
+        <item>15</item>
+        <item>12</item>
+        <item>17</item>
+        <item>19</item>
+        <item>14</item>
+        <item>18</item>
+        <item>20</item>
+        <item>25</item>
     </string-array>
     <string-array name="sess_2_marks">
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
+        <item>11</item>
+        <item>21</item>
+        <item>15</item>
+        <item>28</item>
+        <item>27</item>
+        <item>19</item>
+        <item>15</item>
+        <item>18</item>
+        <item>14</item>
+        <item>13</item>
     </string-array>
     <string-array name="sem_marks">
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
-        <item>10</item>
+        <item>55</item>
+        <item>56</item>
+        <item>45</item>
+        <item>35</item>
+        <item>48</item>
+        <item>44</item>
+        <item>40</item>
+        <item>50</item>
+        <item>52</item>
+        <item>42</item>
     </string-array>
     <string-array name="subject_name">
         <item>Select Subject</item>
         <item>Data Mining</item>
-        <item>Data Mining</item>
-        <item>Data Mining</item>
-        <item>Data Mining</item>
-        <item>Data Mining</item>
-        <item>Data Mining</item>
+        <item>Real Time Systems</item>
+        <item>Digital System Design</item>
+        <item>Software Engineering</item>
+        <item>Unix Programming</item>
+        <item>Intelligent Systems</item>
         <item>Data Mining</item>
         <item>Data Mining</item>
         <item>Data Mining</item>

@@ -10,9 +10,9 @@
         android:orientation="horizontal"
         android:layout_marginTop="3dp">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
+            android:layout_weight="2"
             android:padding="2dp"
             android:layout_margin="3dp"
             android:textSize="18sp"
@@ -20,7 +20,7 @@
             android:text="Subject"
             android:id="@+id/attendance_subject_student"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="2dp"
@@ -30,4 +30,9 @@
             android:text="Attendance"
             android:id="@+id/attendance_student"/>
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#eceff7"
+        android:layout_marginTop="5dp"/>
 </LinearLayout>

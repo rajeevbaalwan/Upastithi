@@ -103,7 +103,7 @@
                     android:padding="8dp"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:id="@+id/teacher_view_marks_sess_1_marks"
+                    android:id="@+id/teacher_edit_marks_sess_1_marks"
                     android:textColor="@android:color/black" />
                 <EditText
                     android:layout_width="wrap_content"
@@ -113,7 +113,7 @@
                     android:padding="8dp"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:id="@+id/teacher_view_marks_sess_2_marks"
+                    android:id="@+id/teacher_edit_marks_sess_2_marks"
                     android:textColor="@android:color/black"/>
                 <EditText
                     android:layout_width="wrap_content"
@@ -123,7 +123,7 @@
                     android:padding="8dp"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:id="@+id/teacher_view_marks_sem_marks"
+                    android:id="@+id/teacher_edit_marks_sem_marks"
                     android:textColor="@android:color/black"/>
                 <EditText
                     android:layout_width="wrap_content"
@@ -133,7 +133,7 @@
                     android:padding="8dp"
                     android:textSize="16sp"
                     android:gravity="center"
-                    android:id="@+id/teacher_view_marks_total_marks"
+                    android:id="@+id/teacher_edit_marks_total_marks"
                     android:textColor="@android:color/black"/>
             </LinearLayout>
         </LinearLayout>
