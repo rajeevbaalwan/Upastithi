@@ -3,77 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_background"
+    android:background="#201f29"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="in.evolve.upastithi.LandingActivity">
 
+
     <LinearLayout
+        android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_centerInParent="true"
-        android:padding="5dp">
+        android:orientation="vertical">
 
-        <Button
-            android:layout_margin="10dp"
-            android:id="@+id/vice_chancellor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Vice chancellor"
-            android:textSize="20sp"
-            android:textColor="@android:color/white"
-            android:background="@drawable/round_rectangle_landing_button_layout" />
-
-        <Button
-            android:layout_margin="10dp"
-            android:id="@+id/chairperson"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/round_rectangle_landing_button_layout"
-            android:text="@string/chaiperson"
-            android:textSize="20sp"
-            android:textColor="@android:color/white"
-            android:shadowColor="#A8A8A8"/>
-
-        <Button
-            android:layout_margin="10dp"
-            android:id="@+id/acedamic"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/round_rectangle_landing_button_layout"
-            android:text="Academic"
-            android:textColor="@android:color/white"
-            android:textSize="20sp" />
-        <Button
-            android:layout_margin="10dp"
-            android:id="@+id/teacher"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/round_rectangle_landing_button_layout"
-            android:text="teacher"
-            android:textColor="@android:color/white"
-            android:textSize="20sp" />
-
-        <Button
-                android:layout_margin="10dp"
-                android:id="@+id/student"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/round_rectangle_landing_button_layout"
-                android:text="@string/student"
-                android:textSize="20sp"
-                android:textColor="@android:color/white"
-                android:shadowColor="#A8A8A8"/>
-
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
         <TextView
+            android:id="@+id/app_name"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Upastithi"
+            android:text="Upasthiti"
             android:textSize="45dp"
-            android:gravity="center_horizontal|center_vertical"
-            android:padding="10dp"
-            android:layout_marginTop="20dp"/>
+            android:gravity="center"
+            android:padding="10dp" />
+
     </LinearLayout>
+
 
 
 

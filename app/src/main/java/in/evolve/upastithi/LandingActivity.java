@@ -1,10 +1,13 @@
 package in.evolve.upastithi;
 
 import android.content.Intent;
+import android.graphics.Typeface;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import in.evolve.upastithi.Academic.Activities.AcademicLoginActivity;
 import in.evolve.upastithi.Chairperson.Activities.ChairpersonLoginActivity;
@@ -12,13 +15,9 @@ import in.evolve.upastithi.Student.Activities.StudentLoginActivity;
 import in.evolve.upastithi.Teacher.Activities.TeacherLoginActivity;
 import in.evolve.upastithi.ViceChancellor.Activities.VcLoginActivity;
 
-public class LandingActivity extends AppCompatActivity implements View.OnClickListener {
+public class LandingActivity extends AppCompatActivity {
 
-    private  Button student;
-    private Button teacher;
-    private Button viceChancellor;
-    private Button chairperson;
-    private Button academic;
+    private TextView appName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,18 +25,20 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
         overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
         setContentView(R.layout.activity_landing);
 
-        student= (Button) findViewById(R.id.student);
-        teacher= (Button) findViewById(R.id.teacher);
-        academic= (Button) findViewById(R.id.acedamic);
-        viceChancellor= (Button) findViewById(R.id.vice_chancellor);
-        chairperson= (Button) findViewById(R.id.chairperson);
+        appName = (TextView) findViewById(R.id.app_name);
+        appName.setTypeface(Typeface.createFromAsset(LandingActivity.this.getAssets(),"Xipital -BRK-.ttf"));
 
-        viceChancellor.setOnClickListener(this);
-        chairperson.setOnClickListener(this);
-        academic.setOnClickListener(this);
-        teacher.setOnClickListener(this);
-        student.setOnClickListener(this);
 
+
+        new Handler()
+        .postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent in = new Intent(LandingActivity.this,WebsiteActivity.class);
+                startActivity(in);
+                LandingActivity.this.finish();
+            }
+        },3000);
     }
 
     @Override
@@ -58,36 +59,5 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
         overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
     }
 
-    @Override
-    public void onClick(View v) {
-        int id=v.getId();
-        switch (id)
-        {
-            case R.id.vice_chancellor:
-                Intent intent1 = new Intent(LandingActivity.this, VcLoginActivity.class);
-                startActivity(intent1);
-                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
-                break;
-            case R.id.chairperson:
-                Intent intent2 = new Intent(LandingActivity.this, ChairpersonLoginActivity.class);
-                startActivity(intent2);
-                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
-                break;
-            case R.id.acedamic:
-                Intent intent3 = new Intent(LandingActivity.this, AcademicLoginActivity.class);
-                startActivity(intent3);
-                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
-                break;
-            case R.id.teacher:
-                Intent intent4 = new Intent(LandingActivity.this, TeacherLoginActivity.class);
-                startActivity(intent4);
-                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
-                break;
-            case R.id.student:
-                Intent intent5 = new Intent(LandingActivity.this, StudentLoginActivity.class);
-                startActivity(intent5);
-                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
-                break;
-        }
-    }
+
 }
